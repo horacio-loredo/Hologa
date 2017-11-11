@@ -1,0 +1,10 @@
+#demo-ribbon {
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, repeat;
+        padding: 49px;
+        }
+.container {
+    position: absolute;
+    top: 7rem;
+    left: 67rem;
+}
