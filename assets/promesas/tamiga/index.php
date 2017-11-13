@@ -10,6 +10,10 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Hologa - Promesas de Pago</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
