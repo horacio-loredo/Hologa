@@ -67,7 +67,7 @@
 
          <div class="container">
           <div class="row">
-             <div class="col s12 m12 l4"><a href="./curso/materialize_basico">
+             <div class="col s12 m12 l4"><a href="./assets/promesas/tamiga/index.php">
                  <div class="card-panel">
                      <div class="center">
                         <img src="assets/img/tamiga.png">
