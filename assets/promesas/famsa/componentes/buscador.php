@@ -1,9 +1,9 @@
-<?php 
+<?php
 	require_once "../php/conexion.php";
 	$conexion=conexion();
 
-	$sql="SELECT id,nombre,cuenta,monto,fecha_promesa,fecha_pago,bucket 
-						from t_tamiga";
+	$sql="SELECT id,nombre,cuenta,monto,fecha_promesa,fecha_pago,bucket
+						from t_famsa";
 				$result=mysqli_query($conexion,$sql);
 
  ?>
@@ -15,7 +15,7 @@
 		<select id="buscadorvivo" class="form-control input-sm">
 			<option value="0">Seleciona uno</option>
 			<?php
-				while($ver=mysqli_fetch_row($result)): 
+				while($ver=mysqli_fetch_row($result)):
 			 ?>
 				<option value="<?php echo $ver[0] ?>">
 			

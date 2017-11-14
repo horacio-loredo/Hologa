@@ -1,4 +1,4 @@
-<?php 
+<?php
 	require_once "conexion.php";
 	$conexion=conexion();
 	$id=$_POST['id'];
@@ -9,7 +9,7 @@
 	$e=$_POST['fecha_pago'];
 	$t=$_POST['bucket'];
 
-	$sql="UPDATE t_tamiga set nombre='$n',
+	$sql="UPDATE t_coppel set nombre='$n',
 								cuenta='$a',
 								monto='$e',
 								fecha_promesa='$t'

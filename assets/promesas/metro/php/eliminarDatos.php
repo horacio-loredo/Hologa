@@ -1,9 +1,9 @@
 
-<?php 
+<?php
 	require_once "conexion.php";
 	$conexion=conexion();
 	$id=$_POST['id'];
 
-	$sql="DELETE from t_tamiga where id='$id'";
+	$sql="DELETE from t_metro where id='$id'";
 	echo $result=mysqli_query($conexion,$sql);
  ?>

@@ -76,7 +76,7 @@
                </a>
              </div>
 
-              <div class="col s12 m12 l4"><a href="./curso/materialize_basico">
+              <div class="col s12 m12 l4"><a href="./assets/promesas/famsa/index.php">
                   <div class="card-panel">
                       <div class="center">
                          <img src="assets/img/famsa.png">
@@ -86,7 +86,7 @@
               </div>
 
 
-              <div class="col s12 m12 l4"><a href="./curso/materialize_basico">
+              <div class="col s12 m12 l4"><a href="./assets/promesas/coppel/index.php">
                   <div class="card-panel">
                       <div class="center">
                          <img src="assets/img/coppel.png">
@@ -101,7 +101,7 @@
 
       <div class="container">
        <div class="row">
-          <div class="col s12 m12 l4"><a href="#">
+          <div class="col s12 m12 l4"><a href="./assets/promesas/metro/index.php">
               <div class="card-panel">
                   <div class="center">
                      <img src="assets/img/metro.png">

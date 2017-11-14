@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 	require_once "conexion.php";
 	$conexion=conexion();
@@ -9,7 +9,7 @@
 	$l=$_POST['fecha_pago'];
 	$g=$_POST['bucket'];
 
-	$sql="INSERT into t_tamiga (nombre,cuenta,monto,fecha_promesa,fecha_pago,bucket)
+	$sql="INSERT into t_metro (nombre,cuenta,monto,fecha_promesa,fecha_pago,bucket)
 								values ('$n','$a','$e','$t','$h','$l')";
 	echo $result=mysqli_query($conexion,$sql);
 
