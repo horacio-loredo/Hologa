@@ -9,17 +9,28 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Hologa - Tarjeta Amiga</title>
+	<title>Hologa - Graficas</title>
+  <!--Import Google Icon Font-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
 	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/themes/default.css">
   <link rel="stylesheet" type="text/css" href="librerias/select2/css/select2.css">
+  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
 
 	<script src="librerias/jquery-3.2.1.min.js"></script>
   <script src="js/funciones.js"></script>
 	<script src="librerias/bootstrap/js/bootstrap.js"></script>
 	<script src="librerias/alertifyjs/alertify.js"></script>
   <script src="librerias/select2/js/select2.js"></script>
+
+<!-- librerias de Graficas  -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
 </head>
 <body>
 
@@ -32,111 +43,104 @@
        <li class="bold"><a href="dashboard.php"><i class="material-icons left grey-text">dashboard</i>Dashboard</a></li>
         <li><a href="#"><i class="material-icons left grey-text">person</i>Admin</a></li>
         <li><a href="#"><i class="material-icons left grey-text">cloud_upload</i>Upload</a></li>
-        <li><a href="#"><i class="material-icons left grey-text">graphic_eq</i>Graficos</a></li>
+        <li><a href="graficas.php"><i class="material-icons left grey-text">graphic_eq</i>Graficos</a></li>
         <li><a href="promesas.php"><i class="material-icons left grey-text">assignment</i>Promesas</a></li>
         <li><a href="#"><i class="material-icons left grey-text">speaker_notes</i>Dialer SIP</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
        <img class="navbar_logo" src="assets/img/ic_fireblue.png">
        <li><a href="dashboard.php"><i class="material-icons left">dashboard</i>Dashboard</a></li>
-        <li><a href="cursos"><i class="material-icons left">person</i>Admin</a></li>
+        <li><a href="#"><i class="material-icons left">person</i>Admin</a></li>
         <li><a href="#"><i class="material-icons left grey-text">cloud_upload</i>Upload</a></li>
-        <li><a href="articulos"><i class="material-icons left">graphic_eq</i>Graficos</a></li>
+        <li><a href="graficas.php"><i class="material-icons left">graphic_eq</i>Graficos</a></li>
         <li><a href="promesas.php"><i class="material-icons left">assignment</i>Promesas</a></li>
         <li><a href="#"><i class="material-icons left">speaker_notes</i>Dialer SIP</a></li>
       </ul>
     </div>
   </nav>
 
-
-	<div class="container">
-    <div id="buscador"></div>
-		<div id="tabla"></div>
-	</div>
-
-	<!-- Modal para registros nuevos -->
+  <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
 
 
-<div class="modal fade" id="modalNuevo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Agrega nueva persona</h4>
-      </div>
-      <div class="modal-body">
-        	<label>Nombre</label>
-        	<input type="text" name="" id="nombre" class="form-control input-sm">
-        	<label>Apellido</label>
-        	<input type="text" name="" id="apellido" class="form-control input-sm">
-        	<label>Email</label>
-        	<input type="text" name="" id="email" class="form-control input-sm">
-        	<label>telefono</label>
-        	<input type="text" name="" id="telefono" class="form-control input-sm">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
-        Agregar
-        </button>
+  <script type="text/javascript">
+  Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Recuperacion Mensual Sedi'
+    },
+    subtitle: {
+        text: 'made by: hologa.com'
+    },
+    xAxis: {
+        categories: [
+            'Enero',
+            'Febrero',
+            'Marzo',
+            'Abril',
+            'Mayo',
+            'Junio',
+            'Julio',
+            'Agosto',
+            'Septiembre',
+            'Octubre',
+            'Noviembre',
+            'Diciembre'
+        ],
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Carteras 2017'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f} pesos</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+    series: [{
+        name: 'T.A',
+        data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 216.4, 194.1, 95.6, 54.4]
 
-      </div>
-    </div>
-  </div>
-</div>
+    }, {
+        name: 'Famsa',
+        data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 91.2, 83.5, 106.6, 92.3]
 
-<!-- Modal para edicion de datos -->
+    }, {
+        name: 'Coppel',
+        data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 52.4, 65.2, 59.3, 51.2]
 
-<div class="modal fade" id="modalEdicion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-sm" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Actualizar datos</h4>
-      </div>
-      <div class="modal-body">
-      		<input type="text" hidden="" id="idpersona" name="">
-        	<label>Nombre</label>
-        	<input type="text" name="" id="nombreu" class="form-control input-sm">
-        	<label>Apellido</label>
-        	<input type="text" name="" id="apellidou" class="form-control input-sm">
-        	<label>Email</label>
-        	<input type="text" name="" id="emailu" class="form-control input-sm">
-        	<label>telefono</label>
-        	<input type="text" name="" id="telefonou" class="form-control input-sm">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning" id="actualizadatos" data-dismiss="modal">Actualizar</button>
+    }, {
+        name: 'MF.A',
+        data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 47.6, 39.1, 46.8, 51.1]
 
-      </div>
-    </div>
-  </div>
-</div>
+        }, {
+        name: 'Metro',
+        data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 47.6, 39.1, 46.8, 51.1]
+
+        }, {
+        name: 'P.S',
+        data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 47.6, 39.1, 46.8, 51.1]
+
+  }, {
+        name: 'Dimex',
+        data: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.6, 0.1, 0.8, 0.1]
+    }]
+  });
+  </script>
+
 
 </body>
 </html>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#tabla').load('componentes/tabla.php');
-    $('#buscador').load('componentes/buscador.php');
-	});
-</script>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('#guardarnuevo').click(function(){
-          nombre=$('#nombre').val();
-          apellido=$('#apellido').val();
-          email=$('#email').val();
-          telefono=$('#telefono').val();
-            agregardatos(nombre,apellido,email,telefono);
-        });
-
-
-
-        $('#actualizadatos').click(function(){
-          actualizaDatos();
-        });
-
-    });
-</script>

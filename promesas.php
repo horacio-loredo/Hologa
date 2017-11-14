@@ -34,16 +34,16 @@
            <li class="bold"><a href="dashboard.php"><i class="material-icons left grey-text">dashboard</i>Dashboard</a></li>
             <li><a href="#"><i class="material-icons left grey-text">person</i>Admin</a></li>
             <li><a href="#"><i class="material-icons left grey-text">cloud_upload</i>Upload</a></li>
-            <li><a href="#"><i class="material-icons left grey-text">graphic_eq</i>Graficos</a></li>
+            <li><a href="graficas.php"><i class="material-icons left grey-text">graphic_eq</i>Graficos</a></li>
             <li><a href="promesas.php"><i class="material-icons left grey-text">assignment</i>Promesas</a></li>
             <li><a href="#"><i class="material-icons left grey-text">speaker_notes</i>Dialer SIP</a></li>
           </ul>
           <ul class="side-nav" id="mobile-demo">
            <img class="navbar_logo" src="assets/img/ic_fireblue.png">
            <li><a href="dashboard.php"><i class="material-icons left">dashboard</i>Dashboard</a></li>
-            <li><a href="cursos"><i class="material-icons left">person</i>Admin</a></li>
+            <li><a href="#"><i class="material-icons left">person</i>Admin</a></li>
             <li><a href="#"><i class="material-icons left grey-text">cloud_upload</i>Upload</a></li>
-            <li><a href="articulos"><i class="material-icons left">graphic_eq</i>Graficos</a></li>
+            <li><a href="graficas.php"><i class="material-icons left">graphic_eq</i>Graficos</a></li>
             <li><a href="promesas.php"><i class="material-icons left">assignment</i>Promesas</a></li>
             <li><a href="#"><i class="material-icons left">speaker_notes</i>Dialer SIP</a></li>
           </ul>

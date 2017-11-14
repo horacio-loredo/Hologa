@@ -22,10 +22,10 @@
               <li class="logo"><a id="logo-container" href="#" class="brand-logo">
             <center><object id="front-page-logo" type="image/svg+xml" data="assets/img/hologa.png">Tu Navegador No Soporta SVG</object></a></li></center>
               </li>
-              <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="material-icons">dashboard</i>Dashboard</a></li>
+              <li class="bold"><a href="dashboard.php" class="waves-effect waves-teal"><i class="material-icons">dashboard</i>Dashboard</a></li>
               <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="material-icons">person</i>Admin</a></li>
               <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="material-icons">cloud_upload</i>Upload</a></li>
-              <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="material-icons">graphic_eq</i>Graficos</a></li>
+              <li class="bold"><a href="graficas.php" class="waves-effect waves-teal"><i class="material-icons">graphic_eq</i>Graficos</a></li>
               <li class="bold"><a href="promesas.php" class="waves-effect waves-teal"><i class="material-icons">assignment</i>Promesas</a></li>
               <li class="bold"><a href="#" class="waves-effect waves-teal"><i class="material-icons">dialer_sip</i>Dialer SIP</a></li>
 
