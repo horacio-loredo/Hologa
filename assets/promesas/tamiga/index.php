@@ -104,7 +104,7 @@
         <h4 class="modal-title" id="myModalLabel">Actualizar datos</h4>
       </div>
       <div class="modal-body">
-      		<input type="text" hidden="" id="idpersona" name="">
+      		<input type="text" hidden="" id="idt_tamiga" name="">
         	<label>Nombre</label>
         	<input type="text" name="" id="nombreu" class="form-control input-sm">
         	<label>Cuenta</label>

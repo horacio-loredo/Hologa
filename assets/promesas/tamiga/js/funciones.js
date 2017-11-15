@@ -2,7 +2,7 @@
 
 function agregardatos(nombre,cuenta,monto,fecha_promesa,fecha_pago,bucket){
 
-	cadena="nombre=" + nombre + 
+	cadena="nombre=" + nombre +
 			"&cuenta=" + cuenta +
 			"&monto=" + monto +
 			"&fecha_promesa=" + fecha_promesa +
@@ -37,13 +37,13 @@ function agregaform(datos){
 	$('#fecha_promesau').val(d[4]);
 	$('#fecha_pagou').val(d[5]);
 	$('#bucketu').val(d[6]);
-	
+
 }
 
 function actualizaDatos(){
 
 
-	id=$('#idpersona').val();
+	id=$('#idt_tamiga').val();
 	nombre=$('#nombreu').val();
 	cuenta=$('#cuentau').val();
 	monto=$('#montou').val();
@@ -52,7 +52,7 @@ function actualizaDatos(){
 	telefono=$('#bucketu').val();
 
 	cadena= "id=" + id +
-			"&nombre=" + nombre + 
+			"&nombre=" + nombre +
 			"&cuenta=" + cuenta +
 			"&monto=" + monto +
 			"&fecha_promesa=" + fecha_promesa +
@@ -64,7 +64,7 @@ function actualizaDatos(){
 		url:"php/actualizaDatos.php",
 		data:cadena,
 		success:function(r){
-			
+
 			if(r==1){
 				$('#tabla').load('componentes/tabla.php');
 				alertify.success("Actualizado con exito :)");
@@ -77,7 +77,7 @@ function actualizaDatos(){
 }
 
 function preguntarSiNo(id){
-	alertify.confirm('Eliminar Datos', '¿Esta seguro de eliminar este registro?', 
+	alertify.confirm('Eliminar Datos', '¿Esta seguro de eliminar este registro?',
 					function(){ eliminarDatos(id) }
                 , function(){ alertify.error('Se cancelo')});
 }

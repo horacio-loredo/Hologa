@@ -19,8 +19,10 @@ use tamiga;
 create table t_promesas(
 			id int auto_increment,
 			nombre varchar(50),
+			cuenta varchar(50),
 			monto varchar(50),
-			fecha varchar(50),
+			fecha_promesa varchar(50),
+			fecha_pago varchar(50),
 			bucket varchar(50),
 			primary key(id)
 						);

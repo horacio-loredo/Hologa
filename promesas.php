@@ -58,7 +58,7 @@
                   <div class="titulo">
                       <h3 class="black-text">Promesas de Pago</h3>
                       <h5 class="black-text">Hora de Actualizacion</h5>
-                      <a  href="curso/css_basico" class="waves-effect waves-blue btn white-text deep-orange">12:00 P.M</a>
+                      <a  href="#" class="waves-effect waves-blue btn white-text deep-orange">12:00:00 P.M</a>
                   </div>
               </div>
           </div>
