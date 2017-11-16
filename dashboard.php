@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/dashboard.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
       <title>Hologa - DashBoard</title>
     </head>
@@ -16,7 +16,6 @@
 
 
 <!-- Estructura del Nav -->
-      <nav class="top-nav transparent"></nav>
             <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
             <ul id="nav-mobile" class="side-nav fixed">
               <li class="logo"><a id="logo-container" href="#" class="brand-logo">
@@ -33,7 +32,7 @@
 
 <main>      <div class="section no-pad-bot" id="index-banner">
         <div class="container">
-          <h1 class="header right-on-small-only">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualizacion</h1>
+          <h1 class="header right-on-small-only">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actualizacion</h1>
           <div class='row center'>
             <h4 class ="header col s12 light center">Todas las actualizaciones son cada 3 horas</h4>
           </div>

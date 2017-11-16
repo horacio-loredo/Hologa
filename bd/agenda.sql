@@ -13,10 +13,10 @@ create table t_persona(
 					);
 
 // Datos de prueba para promesas //
-create database tamiga;
-use tamiga;
+create database promesas;
+use promesas;
 
-create table t_promesas(
+create table t_tamiga(
 			id int auto_increment,
 			nombre varchar(50),
 			cuenta varchar(50),
