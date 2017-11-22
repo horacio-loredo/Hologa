@@ -7,7 +7,7 @@
  ?>
 <div class="row">
 	<div class="col-sm-12">
-	<h2>Envio Masivo Tarjeta Amiga</h2>
+	<h2>Envio Masivo Metrofinanciera</h2>
 		<table class="table table-hover table-condensed table-bordered">
 		<caption>
 			<button class="btn btn-primary" data-toggle="modal" data-target="#modalNuevo">
@@ -31,14 +31,14 @@
 					if($_SESSION['consulta'] > 0){
 						$idp=$_SESSION['consulta'];
 						$sql="SELECT id,fecha,nombre_base,n_telefonos,v_enviados,t_enviados
-						from b_tamiga where id='$idp'";
+						from b_metro where id='$idp'";
 					}else{
 						$sql="SELECT id,fecha,nombre_base,n_telefonos,v_enviados,t_enviados
-						from b_tamiga";
+						from b_metro";
 					}
 				}else{
 					$sql="SELECT id,fecha,nombre_base,n_telefonos,v_enviados,t_enviados
-						from b_tamiga";
+						from b_metro";
 				}
 
 				$result=mysqli_query($conexion,$sql);

@@ -58,7 +58,7 @@
               </div>
             </div>
 
-            <div class="container">   <!--   Promo Section   -->
+            <div class="container">   <!--   Seccion de informacion   -->
                 <div class="row">
                   <div class="col s12 m4">
                     <div class="center promo">
