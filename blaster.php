@@ -20,7 +20,7 @@
      <script src="librerias/bootstrap/js/bootstrap.js"></script>
      <script src="librerias/alertifyjs/alertify.js"></script>
      <script src="librerias/select2/js/select2.js"></script>
-     <title>Hologa - Promesas</title>
+     <title>Hologa - Blaster</title>
    </head>
    <body class="grey lighten-4">
 
@@ -69,7 +69,7 @@
 
         <div class="container">
          <div class="row">
-            <div class="col s12 m12 l4"><a href="#">
+            <div class="col s12 m12 l4"><a href="assets/blaster/tamiga/index.php">
                 <div class="card-panel">
                     <div class="center">
                        <img src="assets/img/tamiga.png">
@@ -78,7 +78,7 @@
               </a>
             </div>
 
-             <div class="col s12 m12 l4"><a href="#">
+             <div class="col s12 m12 l4"><a href="assets/blaster/famsa/index.php">
                  <div class="card-panel">
                      <div class="center">
                         <img src="assets/img/famsa.png">
@@ -88,7 +88,7 @@
              </div>
 
 
-             <div class="col s12 m12 l4"><a href="#">
+             <div class="col s12 m12 l4"><a href="assets/blaster/coppel/index.php">
                  <div class="card-panel">
                      <div class="center">
                         <img src="assets/img/coppel.png">
@@ -103,7 +103,7 @@
 
      <div class="container">
       <div class="row">
-         <div class="col s12 m12 l4"><a href="#">
+         <div class="col s12 m12 l4"><a href="assets/blaster/metro/index.php">
              <div class="card-panel">
                  <div class="center">
                     <img src="assets/img/metro.png">

@@ -2,8 +2,9 @@
   session_start();
 
   unset($_SESSION['consulta']);
+
   /* Este es la recarga en segundos para la pagina de promesas */
-  header("Refresh: 1800; URL='index.php'");
+  header("Refresh: 500; URL='index.php'");
 
  ?>
 
@@ -11,7 +12,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Hologa - Promesas de Pago</title>
+	<title>Hologa - Blaster</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -70,21 +71,19 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Agrega Nueva Promesa</h4>
+        <h4 class="modal-title" id="myModalLabel">Agrega Datos</h4>
       </div>
       <div class="modal-body">
-        	<label>Nombre</label>
-        	<input type="text" name="" id="nombre" class="form-control input-sm">
-        	<label>Cuenta</label>
-        	<input type="text" name="" id="cuenta" class="form-control input-sm">
-        	<label>Monto</label>
-        	<input type="text" name="" id="monto" class="form-control input-sm">
-        	<label>Fecha Promesa</label>
-        	<input type="text" name="" id="fecha_promesa" class="form-control input-sm">
-          <label>Fecha Pago</label>
-          <input type="text" name="" id="fecha_pago" class="form-control input-sm">
-          <label>Bucket</label>
-          <input type="text" name="" id="bucket" class="form-control input-sm">
+        	<label>Fecha</label>
+        	<input type="text" name="" id="fecha" class="form-control input-sm">
+        	<label>Nombre Base</label>
+        	<input type="text" name="" id="nombre_base" class="form-control input-sm">
+        	<label>Numero de Telefonos</label>
+        	<input type="text" name="" id="n_telefonos" class="form-control input-sm">
+        	<label>Veces Enviados</label>
+        	<input type="text" name="" id="v_enviados" class="form-control input-sm">
+          <label>Total Enviados</label>
+          <input type="text" name="" id="t_enviados" class="form-control input-sm">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal" id="guardarnuevo">
@@ -106,19 +105,17 @@
         <h4 class="modal-title" id="myModalLabel">Actualizar datos</h4>
       </div>
       <div class="modal-body">
-      		<input type="text" hidden="" id="idt_tamiga" name="">
-        	<label>Nombre</label>
-        	<input type="text" name="" id="nombreu" class="form-control input-sm">
-        	<label>Cuenta</label>
-        	<input type="text" name="" id="cuentau" class="form-control input-sm">
-        	<label>Monto</label>
-        	<input type="text" name="" id="montou" class="form-control input-sm">
-        	<label>Fecha Promesa</label>
-        	<input type="text" name="" id="fecha_promesau" class="form-control input-sm">
-          <label>Fecha Pago</label>
-          <input type="text" name="" id="fecha_pagou" class="form-control input-sm">
-          <label>Bucket</label>
-          <input type="text" name="" id="bucketu" class="form-control input-sm">
+      		<input type="text" hidden="" id="idb_tamiga" name="">
+        	<label>Fecha</label>
+        	<input type="text" name="" id="fechau" class="form-control input-sm">
+        	<label>Nombre Base</label>
+        	<input type="text" name="" id="nombre_baseu" class="form-control input-sm">
+        	<label>Numero de Telefonos</label>
+        	<input type="text" name="" id="n_telefonosu" class="form-control input-sm">
+        	<label>Veces Enviados</label>
+        	<input type="text" name="" id="v_enviadosu" class="form-control input-sm">
+          <label>Total Enviados</label>
+          <input type="text" name="" id="t_enviadosu" class="form-control input-sm">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-warning" id="actualizadatos" data-dismiss="modal">Actualizar</button>
@@ -141,13 +138,12 @@
 <script type="text/javascript">
     $(document).ready(function(){
         $('#guardarnuevo').click(function(){
-          nombre=$('#nombre').val();
-          cuenta=$('#cuenta').val();
-          monto=$('#monto').val();
-          fecha_promesa=$('#fecha_promesa').val();
-          fecha_pago=$('#fecha_pago').val();
-          bucket=$('#bucket').val();
-            agregardatos(nombre,cuenta,monto,fecha_promesa,fecha_pago,bucket);
+          fecha=$('#fecha').val();
+          nombre_base=$('#nombre_base').val();
+          n_telefonos=$('#n_telefonos').val();
+          v_enviados=$('#v_enviados').val();
+          t_enviados=$('#t_enviados').val();
+            agregardatos(fecha,nombre_base,n_telefonos,v_enviados,t_enviados);
         });
 
 

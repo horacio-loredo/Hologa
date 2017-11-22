@@ -20,7 +20,7 @@
 				<option value="<?php echo $ver[0] ?>">
 
 					<!-- ?php echo $ver[1]." ".$ver[2] ? -->
-					<?php echo $ver[1] ?>
+					<?php echo $ver[1]." ".$ver[6] ?>
 				</option>
 
 			<?php endwhile; ?>

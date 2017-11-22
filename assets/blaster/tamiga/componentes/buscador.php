@@ -2,8 +2,8 @@
 	require_once "../php/conexion.php";
 	$conexion=conexion();
 
-	$sql="SELECT id,nombre,cuenta,monto,fecha_promesa,fecha_pago,bucket
-						from t_metro";
+	$sql="SELECT id,fecha,nombre_base,n_telefonos,v_enviados,t_enviados
+						from b_tamiga";
 				$result=mysqli_query($conexion,$sql);
 
  ?>
@@ -19,7 +19,8 @@
 			 ?>
 				<option value="<?php echo $ver[0] ?>">
 
-					<?php echo $ver[1]." ".$ver[6] ?>
+					<!-- ?php echo $ver[1]." ".$ver[2] ? -->
+					<?php echo $ver[1] ?>
 				</option>
 
 			<?php endwhile; ?>
