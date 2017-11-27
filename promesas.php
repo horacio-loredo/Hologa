@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <link href="css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/promesas.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
       <link rel="stylesheet" type="text/css" href="librerias/bootstrap/css/bootstrap.css">
     	<link rel="stylesheet" type="text/css" href="librerias/alertifyjs/css/alertify.css">
@@ -58,7 +58,7 @@
                   <div class="titulo">
                       <h3 class="black-text">Promesas de Pago</h3>
                       <h5 class="black-text">Hora de Actualizacion</h5>
-                      <a  href="#" class="waves-effect waves-blue btn white-text deep-orange">12:00:00 P.M</a>
+                      <a  href="#" class="waves-effect waves-blue btn white-text deep-orange">10:36:36 A.M</a>
                   </div>
               </div>
           </div>

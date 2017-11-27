@@ -3,11 +3,11 @@
 	$conexion=conexion();
 	$id=$_POST['id'];
 	$n=$_POST['nombre'];
-	$n=$_POST['cuenta'];
-	$n=$_POST['monto'];
-	$a=$_POST['fecha_promesa'];
-	$e=$_POST['fecha_pago'];
-	$t=$_POST['bucket'];
+	$a=$_POST['cuenta'];
+	$e=$_POST['monto'];
+	$t=$_POST['fecha_promesa'];
+	$h=$_POST['fecha_pago'];
+	$l=$_POST['bucket'];
 
 	$sql="UPDATE t_coppel set nombre='$n',
 								cuenta='$a',

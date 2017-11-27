@@ -41,7 +41,7 @@ function agregaform(datos){
 function actualizaDatos(){
 
 
-	id=$('#idb_metro').val();
+	id=$('#metro').val();
 	fecha=$('#fechau').val();
 	nombre_base=$('#nombre_baseu').val();
 	n_telefonos=$('#n_telefonosu').val();

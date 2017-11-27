@@ -11,7 +11,7 @@
 	$sql="UPDATE b_metro set fecha='$n',
 								nombre_base='$a',
 								n_telefonos='$e',
-								v_enviados='$h'
+								v_enviados='$h',
 								t_enviados='$l'
 
 				where id='$id'";

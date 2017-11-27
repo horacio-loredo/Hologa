@@ -57,6 +57,11 @@
     </div>
   </nav>
 
+  <style>
+label{
+    font-size: 17px;
+  }
+  </style>
 
 	<div class="container">
     <div id="buscador"></div>
@@ -105,7 +110,7 @@
         <h4 class="modal-title" id="myModalLabel">Actualizar datos</h4>
       </div>
       <div class="modal-body">
-      		<input type="text" hidden="" id="idb_famsa" name="">
+      		<input type="text" hidden="" id="metro" name="">
         	<label>Fecha</label>
         	<input type="text" name="" id="fechau" class="form-control input-sm">
         	<label>Nombre Base</label>

@@ -14,6 +14,10 @@
 				Agregar nuevo
 				<span class="glyphicon glyphicon-plus"></span>
 			</button>
+			<button class="btn btn-primary green" href="../../../../Upload/tamiga/">
+				CVS
+				<span class="glyphicon glyphicon-upload"></span>
+			</button>
 		</caption>
 			<tr>
 			<td>Nombre</td>

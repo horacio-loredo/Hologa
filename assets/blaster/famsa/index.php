@@ -56,6 +56,12 @@
       </ul>
     </div>
   </nav>
+  
+  <style>
+label{
+    font-size: 17px;
+  }
+  </style>
 
 
 	<div class="container">
